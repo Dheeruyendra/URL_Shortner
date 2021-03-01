@@ -1,15 +1,22 @@
 const express = require('express');
-
 const app = express();
+const router = express.Router();
 
-const PORT = process.env.PORT || 3000;
+const port = process.env.PORT || 3000;
+const api = require('./api');
 
-app.listen(PORT, ()=>
-    console.log(`Server is running at PORT: ${PORT}`));
 
 app.use(express.static('public'));
+app.use(express.json());
+ app.use('/api', api );
 
 
-app.get('/', (req, res)=>{
-    res.send('<h1>Hello World<h1>');
-}); 
+app.listen(port, () => {
+  console.log(`Server listening at port: ${port}`)
+})
+
+
+
+
+
+

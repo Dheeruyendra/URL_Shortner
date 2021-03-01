@@ -1,0 +1,46 @@
+3 apis
+
+1. GET // get all urls
+response 
+body 
+[{
+    "id": "",
+    "long_url":""
+}]
+Status:200
+
+
+2. POST //create new short url
+req body
+
+{
+    "long_url":""
+}
+
+res body
+{
+    id:""
+}
+
+Status:201
+
+3.GET // get long url using short url id
+response
+body
+{
+    "id":"",
+    "long_url":""
+}
+Status:200
+
+
+
+
+
+
+
+   const long_url  = req.body.long_url;
+       const id = shortid.generate();
+      urls[id] = id; 
+
+    res.status(201).send({id})

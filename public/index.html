@@ -7,8 +7,39 @@
     <title>Document</title>
     <link rel="stylesheet" href="/static/css/style.css">
     <script defer src="/static/js/script.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Alatsi' rel='stylesheet'>
+    <script  src="https://kit.fontawesome.com/5b41285cd8.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    ttttt
+    <div class="main">
+      
+        <nav class="nav_bar">
+      <h2 class="title">URL SHORTNER <i class="fas fa-compress-arrows-alt"></i></h2>  
+        </nav>
+        
+        <div class="short_main">
+
+        <input type="url" id="user_input" placeholder="Shorten your link"  >
+         <div>
+        <input type="button" id="btn1" value="Shorten">
+        <input type="button" id="btn2" value="Clear"> </div>
+        </div>
+           
+        <div class="result_section">
+         
+          <input type="text" id="result_box"  disabled="disabled"  placeholder="result will appear here"></textarea> 
+         <input type="button" id="btn3" value="Copy" >
+        </div>
+       
+      <div class="all_urls"> 
+       <p>Previous URLS</p>     
+       <div>
+
+       </div> 
+    </div>
+     
+        </div>
+
+
 </body>
 </html>
