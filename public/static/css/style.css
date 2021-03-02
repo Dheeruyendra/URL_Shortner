@@ -1,5 +1,5 @@
 *{
- background-color: #d6d6d6;
+ background-color:white;
  margin: 0 auto;
  padding: 0 auto;
  
@@ -34,13 +34,13 @@
 
  .short_main, .result_section{
      margin-top: 50px;
-     height: 100px;
+     height:200px;
      display: flex;
      flex-direction: column;
      justify-content: center;
      align-items: center;
      align-content: center;
-    background-color: white;
+    background-color: #d6d6d6;
     width: 50%;
     margin-bottom: 20px;
     padding: 20px 10px;
@@ -49,17 +49,45 @@
  }
 
  .short_main input, .result_section input {
-    background-color: white; 
-     margin-bottom: 10px;
+  
+    margin-bottom: 10px;
+     
      font-size: 22px;
      font-family: 'Alatsi';
  }
+ .btns {
+     background-color: #d6d6d6;
+ }
 
+  
+.btns input , #btn3 {
+   margin-top: 20px;
+    padding: 10px 10px 10px 10px;
+    background-color: hsl(219deg 88% 55%);
+    color: hsl(0deg 0% 100%);
+    border-radius: 5px;
+    border:2px solid hsl(219deg 88% 55%);
+    font-size: 16px;
+
+}
+
+.btns input:hover {
+    color: black;
+    font-weight: bold;
+}
+.result_section input:hover{
+    
+    font-weight: bold;
+}
 
  #user_input , #result_box{
     
      width: 80%;
-     padding: 10px; 
+     padding: 10px;
+ }
+
+ .all_urls{
+     display: flex;
  }
 
 
