@@ -4,6 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
+    "dev": "nodemon app",
     "start": "node app.js"
     
   },
