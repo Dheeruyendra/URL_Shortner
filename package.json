@@ -12,10 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
-  },
-  "devDependencies": {
     "express": "^4.17.1",
     "shortid": "^2.2.16"
-  }
+  }  
 }
